@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tugas Tabel</title>
+<style>
+  body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+    background:white;
+    margin: 20px;
+  }
+
+  table {
+    width: 100%;
+    max-width: 840px;
+    border-collapse: collapse;
+    border: 1px solid silver;
+    border-radius: 6px;
+  }
+
+  th, td {
+    border: 1px solid silver;
+    padding: 12px 6px;
+    text-align: center;
+  }
+
+  /* Header abu-abu bergradasi */
+  thead th {
+    background: linear-gradient(white,rgb(220, 219, 219));
+    font-weight: bold;
+    color: black;
+  }
+
+  /* Sel kecil MK, T, P, L (kotak biru) */
+  thead tr.sub th {
+    padding: 6px 4px;
+    background: linear-gradient(white,rgb(220, 219, 219));
+  }
+  .badge {
+    display: inline-block;
+    min-width: 22px;
+    padding: 1px 4px;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  /* Kolom teks rata kiri */
+  td.kiri {
+    text-align: left;
+    padding-left: 8px;
+  }
+
+  /* Baris belang putih - abu */
+  tbody tr:nth-child(odd)  { background: rgb(220, 219, 219); }
+  tbody tr:nth-child(even) { background: white; }
+
+  /* Footer */
+  tfoot th, tfoot td {
+    background: linear-gradient(white,rgb(220, 219, 219));
+    font-weight: bold;
+    color: black;
+  }
+
+  .total {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+</style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <!-- Header baris 1 -->
+    <tr>
+      <th rowspan="2" width="35">No</th>
+      <th rowspan="2" width="70">Kode</th>
+      <th rowspan="2" width="200">Mata Kuliah</th>
+      <th rowspan="2" width="180">Dosen</th>
+      <th colspan="4">SKS</th>
+      <th rowspan="2" width="90">Kelas</th>
+      <th rowspan="2" width="100">Status</th>
+    </tr>
+    <!-- Header baris 2 -->
+    <tr class="sub">
+      <th><span class="badge">MK</span></th>
+      <th><span class="badge">T</span></th>
+      <th><span class="badge">P</span></th>
+      <th><span class="badge">L</span></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>1</td><td>FIT1001</td>
+      <td class="kiri">BAHASA INGGRIS</td>
+      <td class="kiri">DJAMANHURI</td>
+      <td>2</td><td>2</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>2</td><td>FIT1009</td>
+      <td class="kiri">TECHNOPRENEURSHIP</td>
+      <td class="kiri">BUDI SETIADI, S.Kom, M.Kom</td>
+      <td>2</td><td>2</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>3</td><td>MGU1103</td>
+      <td class="kiri">PENDIDIKAN KEWARGANEGARAAN</td>
+      <td class="kiri">DJAMANHURI</td>
+      <td>2</td><td>2</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>4</td><td>MGU1108</td>
+      <td class="kiri">BAHASA ARAB</td>
+      <td class="kiri">AJENG KARTINI</td>
+      <td>2</td><td>2</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>5</td><td>TIF1301</td>
+      <td class="kiri">KALKULUS</td>
+      <td class="kiri">ADANI DHARMAWATI</td>
+      <td>2</td><td>2</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>6</td><td>TIF1302</td>
+      <td class="kiri">PEMROGRAMAN TERSTRUKTUR</td>
+      <td class="kiri">Dr. MUHAMMAD EDYA ROSADI, S.Kom., M.Kom</td>
+      <td>3</td><td>3</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>7</td><td>TIF1303</td>
+      <td class="kiri">PEMROGRAMAN WEB 1</td>
+      <td class="kiri">M. DEDY ROSYADI, S.Kom., M.Kom</td>
+      <td>3</td><td>3</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>8</td><td>TIF1304</td>
+      <td class="kiri">SISTEM BERKAS</td>
+      <td class="kiri">FATHUL HAFIDH, S.Kom., M.Kom</td>
+      <td>3</td><td>3</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>9</td><td>TIF1305</td>
+      <td class="kiri">JARINGAN KOMPUTER</td>
+      <td class="kiri">AHMADI, M.KOM</td>
+      <td>2</td><td>2</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>10</td><td>TIF1306</td>
+      <td class="kiri">PRAKTEK JARINGAN KOMPUTER</td>
+      <td class="kiri">AHMADI, M.KOM</td>
+      <td>1</td><td>1</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+    <tr>
+      <td>11</td><td>TIF1307</td>
+      <td class="kiri">SISTEM OPERASI</td>
+      <td class="kiri">HAYATI NOOR, M. Kom</td>
+      <td>2</td><td>2</td><td></td><td></td>
+      <td>REG B PAGI BJB (12)</td><td>TERIMA</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <th colspan="4">Jumlah Mata Kuliah Di Terima</th>
+      <th colspan="4">11</th>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <th colspan="4">Jumlah SKS Di Terima</th>
+      <th colspan="4">24 SKS</th>
+      <td colspan="2"></td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>
