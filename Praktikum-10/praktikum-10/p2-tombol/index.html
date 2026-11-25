@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Praktikum 10 - Buttons & Badges</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRI14kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <main class="container py-4">
+    <h1 class="h3 mb-3">Lab Tombol dan Badge</h1>
+
+    <h2 class="h5">A. Varian</h2>
+    <button type="button" class="btn btn-primary">Simpan</button>
+    <button type="button" class="btn btn-secondary">Batal</button>
+    <button type="button" class="btn btn-success">Setujui</button>
+    <button type="button" class="btn btn-danger">Hapus</button>
+    <button type="button" class="btn btn-warning">Revisi</button>
+    <button type="button" class="btn btn-outline-primary">Detail</button>
+    <button type="button" class="btn btn-link">Lihat semua</button>
+
+    <h2 class="h5 mt-4">B. Ukuran dan lebar</h2>
+    <button type="button" class="btn btn-primary btn-lg">Besar</button>
+    <button type="button" class="btn btn-primary btn-sm">Kecil</button>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-2">
+      <button type="button" class="btn btn-outline-secondary">Batal</button>
+      <button type="submit" class="btn btn-primary">Simpan</button>
+    </div>
+
+    <h2 class="h5 mt-4">C. Nonaktif</h2>
+    <button type="button" class="btn btn-primary" disabled>Button disabled</button>
+    <a href="#" class="btn btn-primary disabled">Link hanya class disabled</a>
+    <a class="btn btn-primary disabled" role="button" aria-disabled="true">Link disabled lengkap</a>
+
+    <h2 class="h5 mt-4">D. Badge</h2>
+    <p>
+      Status:
+      <span class="badge rounded-pill text-bg-success">Aktif</span>
+      <span class="badge rounded-pill text-bg-warning">Cuti</span>
+      <span class="badge rounded-pill bg-warning">Cuti (bg saja)</span>
+    </p>
+    <button type="button" class="btn btn-primary position-relative mt-2">
+      Notifikasi
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        3 <span class="visually-hidden">notifikasi belum dibaca</span>
+      </span>
+    </button>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVc7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
